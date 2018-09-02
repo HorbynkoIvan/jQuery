@@ -8,8 +8,14 @@ $(function () {
     // $('h2 + p').css('color', 'red')
     //
     // select privious element
-    $('#content').prev().css('color', 'red')
+    // $('#content').prev().css('color', 'red')
 
     // select next element
-    $('#content').prev().css('color', 'red')
+    // $('#content').next().css('color', 'red')
+
+    // chose all element
+    //$('*').css('color', 'red')
+
+    // chose all element which are the child of
+    $('article > *').css('color', 'red')
 })

@@ -1,24 +1,15 @@
 $(function () {
-    $('h1').on('click', function () {
-        $(this).css('color', 'green')
-    });
+    // $(".wrapper").css('color', 'red')
+    // $('article h2').css('color', 'red')
+    // equal to
+    // $('article').find('h2').css('color', 'red')
 
-    /*method html() using for html tags*/
-    $("#div1").html('<a href="example.html">Link</a><b>hello</b>');
-    /*method ttext() using for text*/
-    $("#div2").text('<a href="example.html">Link</a><b>hello</b>');
+    // all p which are after h2
+    // $('h2 + p').css('color', 'red')
+    //
+    // select privious element
+    $('#content').prev().css('color', 'red')
 
-    $('.btn_start').on('click', function () {
-        $('.message')
-            .html("Its message")
-            .css('color', 'orange')
-            .parent()
-            .css('background', 'red')
-            .width(100)
-            .height(50)
-    });
-    $('.btn_reset').on('click', function () {
-        /*use that method to reload page*/
-        location.reload();
-    })
-});
+    // select next element
+    $('#content').prev().css('color', 'red')
+})

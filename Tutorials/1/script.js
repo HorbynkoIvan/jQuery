@@ -5,7 +5,7 @@ $(function () {
 
     /*method html() using for html tags*/
     $("#div1").html('<a href="example.html">Link</a><b>hello</b>');
-    /*method ttext() using for text*/
+    /*method text() using for text*/
     $("#div2").text('<a href="example.html">Link</a><b>hello</b>');
 
     $('.btn_start').on('click', function () {

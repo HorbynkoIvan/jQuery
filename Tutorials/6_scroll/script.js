@@ -1,9 +1,9 @@
 window.onscroll = function () {
+    var element = document.querySelector('.block');
+
     function getCoord() {
-        var element = document.querySelector('.block');
         var block = element.getBoundingClientRect();
         element.innerHTML = JSON.stringify(block);
-        console.log(block);
 
         return {
             top: block.top + pageYOffset,
@@ -11,6 +11,10 @@ window.onscroll = function () {
         }
     }
 
-    getCoord();
+    var coord = getCoord();
 
+    if (pageYOffset >= coord.top) {
+        console.log("fixed");
+        element.style.position = "fixed"
+    }
 }
